@@ -13,7 +13,10 @@
 body {
   --bs-light-rgb: var(--matr-navbar-bg-rgb);
 }
-
+footer {
+  background-color: #292929;
+  color: white;
+}
 /* Set the alert background on the signin and signup pages. */
 #signin-page .alert-light, #signup-page .alert-light {
   --bs-alert-bg: var(--matr-navbar-bg);

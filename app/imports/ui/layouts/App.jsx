@@ -17,6 +17,7 @@ import NavBar from '../components/NavBar';
 import SignIn from '../pages/SignIn';
 import NotAuthorized from '../pages/NotAuthorized';
 import LoadingSpinner from '../components/LoadingSpinner';
+import IslandSnow from '../components/IslandSnow';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -82,7 +83,7 @@ ProtectedRoute.propTypes = {
 };
 
 ProtectedRoute.defaultProps = {
-  children: <Landing />,
+  children: <IslandSnow />,
 };
 
 // Require a component and location to be passed to each AdminProtectedRoute.
@@ -93,7 +94,7 @@ AdminProtectedRoute.propTypes = {
 
 AdminProtectedRoute.defaultProps = {
   ready: false,
-  children: <Landing />,
+  children: <IslandSnow />,
 };
 
 export default App;
