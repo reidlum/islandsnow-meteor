@@ -23,3 +23,5 @@ const TopMenu = () => (
     </Container>
   </Navbar>
 );
+
+export default TopMenu;

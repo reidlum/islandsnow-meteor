@@ -1,4 +1,5 @@
 import React from 'react';
+import IslandSnowLogo from './IslandSnowLogo';
 
 const MiddleMenu = () => (
   <Navbar expand="lg">
@@ -25,3 +26,4 @@ const MiddleMenu = () => (
     </Container>
   </Navbar>
 );
+export default MiddleMenu;

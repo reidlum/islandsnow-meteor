@@ -18,6 +18,7 @@ import SignIn from '../pages/SignIn';
 import NotAuthorized from '../pages/NotAuthorized';
 import LoadingSpinner from '../components/LoadingSpinner';
 import IslandSnow from '../components/IslandSnow';
+import TopMenu from '../components/TopMenu';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -30,9 +31,9 @@ const App = () => {
   return (
     <Router>
       <div className="d-flex flex-column min-vh-100">
-        <NavBar />
+        <TopMenu />
         <Routes>
-          <Route exact path="/" element={<Landing />} />
+          <Route exact path="/" element={<IslandSnow />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signout" element={<SignOut />} />
@@ -83,7 +84,7 @@ ProtectedRoute.propTypes = {
 };
 
 ProtectedRoute.defaultProps = {
-  children: <IslandSnow />,
+  children: <Landing />,
 };
 
 // Require a component and location to be passed to each AdminProtectedRoute.
@@ -94,7 +95,7 @@ AdminProtectedRoute.propTypes = {
 
 AdminProtectedRoute.defaultProps = {
   ready: false,
-  children: <IslandSnow />,
+  children: <Landing />,
 };
 
 export default App;

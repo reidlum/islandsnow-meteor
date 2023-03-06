@@ -29,3 +29,5 @@ const FooterMenu = () => (
     </div>
   </footer>
 );
+
+export default FooterMenu;

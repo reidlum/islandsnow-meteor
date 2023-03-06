@@ -5,12 +5,13 @@ import MiddleMenu from '../components/MiddleMenu';
 import FullWidthImage from '../components/FullWidthImage';
 import FooterMenu from '../components/FooterMenu';
 
-export default const IslandSnow = () => (
-  <Container fluid>
+const IslandSnow = () => (
+  <>
     <TopMenu/>
     <IslandSnowLogo/>
     <MiddleMenu/>
     <FullWidthImage/>
     <FooterMenu/>
-  </Container>
+  </>
 );
+export default IslandSnow;
