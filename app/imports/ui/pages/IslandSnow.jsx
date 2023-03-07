@@ -7,11 +7,11 @@ import FooterMenu from '../components/FooterMenu';
 
 const IslandSnow = () => (
   <>
-    <TopMenu/>
-    <IslandSnowLogo/>
-    <MiddleMenu/>
-    <FullWidthImage/>
-    <FooterMenu/>
+    <TopMenu />
+    <IslandSnowLogo />
+    <MiddleMenu />
+    <FullWidthImage />
+    <FooterMenu />
   </>
 );
 export default IslandSnow;
