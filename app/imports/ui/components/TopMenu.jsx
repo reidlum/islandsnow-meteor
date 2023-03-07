@@ -6,17 +6,17 @@ const TopMenu = () => (
   <Navbar bg="light" expand="lg">
     <Container>
       <Nav className="me-auto">
-        <Nav.Link><Facebook/></Nav.Link>
-        <Nav.Link><Twitter/></Nav.Link>
-        <Nav.Link><Pinterest/></Nav.Link>
-        <Nav.Link><Instagram/></Nav.Link>
+        <Nav.Link><Facebook /></Nav.Link>
+        <Nav.Link><Twitter /></Nav.Link>
+        <Nav.Link><Pinterest /></Nav.Link>
+        <Nav.Link><Instagram /></Nav.Link>
       </Nav>
       <Nav className="justify-content-end">
-        <Nav.Link><HouseFill/> </Nav.Link>
-        <Nav.Link><Search/> </Nav.Link>
-        <Nav.Link><PersonFill/> </Nav.Link>
-        <NavDropdown title={<Cart/>}>
-          <NavDropdown.Item></NavDropdown.Item>
+        <Nav.Link><HouseFill /> </Nav.Link>
+        <Nav.Link><Search /> </Nav.Link>
+        <Nav.Link><PersonFill /> </Nav.Link>
+        <NavDropdown title={<Cart />}>
+          <NavDropdown.Item />
           <NavDropdown.ItemText>Your cart is currently empty.</NavDropdown.ItemText>
         </NavDropdown>
       </Nav>
